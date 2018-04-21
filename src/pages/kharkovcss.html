@@ -1,0 +1,139 @@
+---
+subject: Welcome to KharkovCSS
+date: 21 Квітня, 2018
+address: Харків, Fabrika.space, вул. Благовіщенська, 1
+social: {
+    vk: https://vk.com/kharkivcss,
+    fb: https://www.facebook.com/KharkivCSS,
+    twitter: https://twitter.com/KharkivCSS,
+    youtube: https://www.youtube.com/c/KharkivCSSConf,
+}
+email:  nei.css@gmail.com
+skype: nightnei
+---
+
+
+<container>
+    <row class="collapse">
+        <columns>
+            <spacer size="20"></spacer>
+            <h3 class="text-center title">KharkivCSS #3</h3>
+        </columns>
+    </row>
+    <row class="collapse">
+        <columns class="contact-info">
+            <p class="text-center">{{date}}</p>
+            <p class="text-center">{{address}}</p>
+        </columns>
+    </row>
+    <row>
+        <columns class="border"></columns>
+    </row>
+    <row>
+        <columns>
+            <spacer size="20"></spacer>
+            <center>
+                <button class="default custom" href="#">Купити квиток</button>
+            </center>
+        </columns>
+    </row>
+</container>
+
+<spacer size="10"></spacer>
+<container>
+    <row>
+        <columns>
+            <img src="assets/img/header.png" alt="">
+        </columns>
+    </row>
+</container>
+<spacer size="10"></spacer>
+<container>
+    <row>
+        <columns>
+            <spacer size="20"></spacer>
+            <h4 class="text-center title-light">Доповідачі</h4>
+        </columns>
+    </row>
+    <row>
+        <columns large="6">
+            <center>
+                <img src="assets/img/denisMescheriakov.jpg" alt="">
+            </center>
+            <spacer size="10"></spacer>
+            <h5 class="speaker-title text-center">Мещеряков Денис</h5>
+            <h6 class="theme-title text-center">Email Templates</h6>
+            <p class="speaker-description">Верстка писем вызывает у вас ужас? Волосы становятся дыбом только от одной мысли про табличную верстку?
+                И вообще кому нужны эти письма их же никто не читает…
+                Давайте разберемся какая она верстка писем в 2018!</p>
+        </columns>
+        <columns large="6">
+            <center>
+                <img src="assets/img/dersmoll.png" alt="">
+            </center>
+            <spacer size="10"></spacer>
+            <h5 class="speaker-title text-center">Смолянинов Александр</h5>
+            <h6 class="theme-title text-center">Понижаем порог вхождения в performance</h6>
+            <p class="speaker-description">
+                Последнее время появляется все больше хороших технических статей и докладов,
+                где подробно описаны способы повышения производительности в вебе.
+                Несмотря на это, многие разработчики все еще не спешат к ним прислушиваться.
+                Давайте разберемся, почему так, что мы можем с этим сделать и как заработать на этой ситуации.</p>
+        </columns>
+    </row>
+</container>
+<spacer size="10"></spacer>
+<container>
+    <row>
+        <columns>
+            <spacer size="20"></spacer>
+            <h4 class="text-center title-light">Ми в соцмережах</h4>
+        </columns>
+    </row>
+    <row>
+        <columns small="12" large="12">
+            <center>
+                <menu class="social">
+                    <item href="{{social.fb}}">
+                        <img src="assets/img/fb.png" alt="" class="float-center">
+                    </item>
+                    <item href="{{social.twitter}}">
+                        <img src="assets/img/tw.png" alt="" class="float-center">
+                    </item>
+                    <item href="{{social.vk}}">
+                        <img src="assets/img/vk.png" alt="" class="float-center">
+                    </item>
+                    <item href="{{social.youtube}}">
+                        <img src="assets/img/youtube.png" alt="" class="float-center">
+                    </item>
+                </menu>
+            </center>
+        </columns>
+    </row>
+</container>
+<spacer size="10"></spacer>
+<container>
+    <row>
+        <columns>
+            <spacer size="30"></spacer>
+            <center>
+                <button class="default custom" href="#">Купити квиток</button>
+            </center>
+        </columns>
+    </row>
+</container>
+<spacer size="10"></spacer>
+<container>
+    <row>
+        <columns>
+            <spacer size="20"></spacer>
+            <h4 class="text-center title-light">Контакти</h4>
+        </columns>
+    </row>
+    <row class="collapse">
+        <columns class="contact-info">
+            <p class="text-center"><a href="#" class="text-center">Email: {{email}}</a></p>
+            <p class="text-center">Skype: {{skype}}</p>
+        </columns>
+    </row>
+</container>

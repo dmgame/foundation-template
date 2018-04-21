@@ -2,3 +2,71 @@
 @import 'foundation-emails';
 
 @import 'template/template';
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+.email-title {
+  margin-bottom: 30px;
+}
+
+.brown{
+  background-color: #573b26;
+}
+
+.brown h3 {
+  color: #fff;
+}
+
+.bordered {
+  border: 5px solid #573b26;
+}
+
+.m-auto {
+  margin: 0 auto;
+}
+
+.va-middle {
+  vertical-align: middle;
+}
+
+.violet {
+  background-color: #ce82ee;
+}
+
+.title {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.contact-info p{
+  font-size: 14px;
+  color: #999999;
+}
+
+.border {
+  border-top: 1px solid #999;
+}
+
+.title-light {
+  font-weight: normal;
+}
+
+.speaker-title {
+  font-size: 18px;
+}
+
+.theme-title {
+  color: $violet;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.speaker-description {
+  font-size: 12px;
+}
+
+.social img{
+  width: 50px;
+}

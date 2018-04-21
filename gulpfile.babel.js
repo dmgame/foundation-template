@@ -25,6 +25,7 @@ var CONFIG;
 // Build the "dist" folder by running all of the below tasks
 gulp.task('build',
   gulp.series(clean, pages, sass, images, inline));
+  // gulp.series(clean, pages, sass, inline));
 
 // Build emails, run the server, and watch for file changes
 gulp.task('default',
@@ -33,10 +34,12 @@ gulp.task('default',
 // Build emails, then send to litmus
 gulp.task('litmus',
   gulp.series('build', creds, aws, litmus));
+  // gulp.series('build', creds, litmus));
 
 // Build emails, then send to EMAIL
 gulp.task('mail',
-  gulp.series('build', creds, aws, mail));
+  // gulp.series('build', creds, aws, mail));
+  gulp.series('build', creds, mail));
 
 // Build emails, then zip
 gulp.task('zip',
@@ -86,7 +89,7 @@ function sass() {
 // Copy and compress images
 function images() {
   return gulp.src(['src/assets/img/**/*', '!src/assets/img/archive/**/*'])
-    .pipe($.imagemin())
+    // .pipe($.imagemin())
     .pipe(gulp.dest('./dist/assets/img'));
 }
 

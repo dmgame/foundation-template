@@ -12,6 +12,9 @@
 //   7. Menu
 //   8. Thumbnail
 
+// Colors
+$violet: #ec0080;
+
 
 // 1. Global
 // ---------
@@ -27,7 +30,7 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 $pre-color: #ff6908;
-$global-width: 580px;
+$global-width: 680px;
 $global-width-small: 95%;
 $global-gutter: 16px;
 $body-background: $light-gray;
@@ -106,12 +109,12 @@ $button-font-size: (
   default: 16px,
   large: 20px,
 );
-$button-color: $white;
+$button-color: $violet;
 $button-color-alt: $medium-gray;
-$button-font-weight: bold;
+$button-font-weight: normal;
 $button-margin: 0 0 $global-margin 0;
-$button-background: $primary-color;
-$button-border: 2px solid $button-background;
+$button-background: $white;
+$button-border: 1px solid $violet;
 $button-radius: $global-radius;
 $button-rounded: $global-rounded;
 
